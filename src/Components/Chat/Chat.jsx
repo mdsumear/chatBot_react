@@ -192,7 +192,7 @@ const Chatbot = () => {
     const response = await fetch("http://localhost:5000/ai", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: inputText, sessionId }),
+      body: JSON.stringify({ message: msg, sessionId }),
     });
 
     const data = await response.json();
@@ -258,6 +258,7 @@ const Chatbot = () => {
           className="chat-input"
           placeholder="Type or speak..."
           value={inputText}
+          disabled={isListening}
           onChange={(e) => setInputText(e.target.value)}
         />
 

@@ -1,6 +1,6 @@
 import "./App.css";
-// import Chatbot from "./Components/Widget/chat";
-import Face from "./Components/Face/face";
+// import Chatbot from "./Components/Chat/Chat";
+import Face from "./Components/Face/Face";
 
 function App() {
   return (

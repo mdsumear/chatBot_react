@@ -70,6 +70,7 @@ export default function Face() {
             .add(influences, value, 0, 1, 0.01)
             .name(key.replace("blendShape1.", ""))
             .listen();
+          console.log(key, value);
         }
       });
 
